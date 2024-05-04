@@ -66,7 +66,10 @@ class HomeView extends StatelessWidget {
                       color: AppColors.indicatorColor,
                       borderRadius: BorderRadius.circular(20)),
                   indicatorSize: TabBarIndicatorSize.tab,
-                  labelStyle: GoogleFonts.roboto(),
+                  labelStyle: GoogleFonts.roboto(
+                    color: AppColors.whiteColor,
+                  ),
+                  unselectedLabelColor: AppColors.unselectedTabColor,
                   tabs: const [
                     Text("Most Viewed"),
                     Text("Nearby"),
