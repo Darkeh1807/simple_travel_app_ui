@@ -29,7 +29,7 @@ class CustomAppBar extends StatelessWidget {
                 Text(
                   "Hi, David 👋",
                   style: GoogleFonts.montserrat(
-                    fontSize: AppFonts.bigText,
+                    fontSize: 24,
                     fontWeight: FontWeight.w500,
                   ),
                 ),
