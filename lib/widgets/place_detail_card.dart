@@ -9,6 +9,7 @@ import 'package:travel_app_ui/widgets/add_vertical_spacing.dart';
 class PlaceDetailCard extends StatelessWidget {
   final double height;
   final double width;
+
   const PlaceDetailCard({
     super.key,
     required this.height,

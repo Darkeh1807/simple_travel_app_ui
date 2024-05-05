@@ -17,7 +17,7 @@ class MostViewedPlaces extends StatelessWidget {
               right: 10,
             ),
             child: PlacesCard(
-              isFavourite: true,
+              isFavourite: false,
             ),
           );
         },

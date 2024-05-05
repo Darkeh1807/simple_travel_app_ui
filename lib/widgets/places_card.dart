@@ -7,7 +7,7 @@ import 'package:travel_app_ui/widgets/place_detail_card.dart';
 
 class PlacesCard extends StatefulWidget {
   bool isFavourite;
-  PlacesCard({super.key, this.isFavourite = false});
+  PlacesCard({super.key, required this.isFavourite});
 
   @override
   State<PlacesCard> createState() => _PlacesCardState();
