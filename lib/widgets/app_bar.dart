@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:travel_app_ui/constants/colors.dart';
-import 'package:travel_app_ui/constants/fonts.dart';
+import 'package:travel_app_ui/widgets/add_vertical_spacing.dart';
 
 class CustomAppBar extends StatelessWidget {
   const CustomAppBar({super.key});
@@ -23,13 +23,11 @@ class CustomAppBar extends StatelessWidget {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const SizedBox(
-                  height: 40,
-                ),
+                const AddVerticalSpacing(value: 40),
                 Text(
                   "Hi, David 👋",
                   style: GoogleFonts.montserrat(
-                    fontSize: AppFonts.bigText,
+                    fontSize: 24,
                     fontWeight: FontWeight.w500,
                   ),
                 ),

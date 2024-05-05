@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:travel_app_ui/constants/colors.dart';
 import 'package:travel_app_ui/constants/fonts.dart';
+import 'package:travel_app_ui/views/places/latest_view.dart';
+import 'package:travel_app_ui/views/places/most_viewed.dart';
+import 'package:travel_app_ui/views/places/nearby_view.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
@@ -74,6 +77,19 @@ class HomeView extends StatelessWidget {
                     Text("Most Viewed"),
                     Text("Nearby"),
                     Text("Latest"),
+                  ],
+                ),
+              ),
+              const SizedBox(
+                height: 20,
+              ),
+              const SizedBox(
+                height: 400,
+                child: TabBarView(
+                  children: [
+                    MostViewedPlaces(),
+                    NearbyView(),
+                    LatestView(),
                   ],
                 ),
               )
