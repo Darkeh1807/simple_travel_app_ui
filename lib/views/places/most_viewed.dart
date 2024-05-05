@@ -8,14 +8,17 @@ class MostViewedPlaces extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: ListView.builder(
+        primary: true,
         itemCount: 5,
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) {
-          return const Padding(
-            padding: EdgeInsets.only(
+          return Padding(
+            padding: const EdgeInsets.only(
               right: 10,
             ),
-            child: PlacesCard(),
+            child: PlacesCard(
+              isFavourite: true,
+            ),
           );
         },
       ),
