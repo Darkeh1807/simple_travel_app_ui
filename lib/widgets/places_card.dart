@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:travel_app_ui/constants/colors.dart';
-import 'package:travel_app_ui/widgets/place_detail_card.dart';
+import 'package:travel_app_ui/widgets/place_card_info.dart';
 
 class PlacesCard extends StatefulWidget {
   bool isFavourite;
@@ -69,7 +69,7 @@ class _PlacesCardState extends State<PlacesCard> {
           Positioned(
             top: 300,
             left: placeCardWidth * .08,
-            child: const PlaceDetailCard(
+            child: const PlaceDetailInfo(
               height: 75,
               width: 220,
             ),

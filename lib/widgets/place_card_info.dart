@@ -6,11 +6,11 @@ import 'package:travel_app_ui/constants/fonts.dart';
 import 'package:travel_app_ui/widgets/add_horizontal_spacing.dart';
 import 'package:travel_app_ui/widgets/add_vertical_spacing.dart';
 
-class PlaceDetailCard extends StatelessWidget {
+class PlaceDetailInfo extends StatelessWidget {
   final double height;
   final double width;
 
-  const PlaceDetailCard({
+  const PlaceDetailInfo({
     super.key,
     required this.height,
     required this.width,
