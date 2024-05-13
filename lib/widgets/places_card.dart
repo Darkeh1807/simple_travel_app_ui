@@ -19,11 +19,7 @@ class _PlacesCardState extends State<PlacesCard> {
     final placeCardWidth = MediaQuery.of(context).size.width * 0.7;
     //Staack widget in order to put other widgets on top of the container
     return InkWell(
-      onTap: () {
-        setState(() {
-          widget.isFavourite = !widget.isFavourite;
-        });
-      },
+      onTap: () {},
       child: Stack(
         children: [
           Container(
@@ -43,23 +39,30 @@ class _PlacesCardState extends State<PlacesCard> {
             left: placeCardWidth -
                 80, //With this, there is no way the favourite icon goes out of the place card
             top: 25,
-            child: Container(
-              height: 50,
-              width: 50,
-              decoration: BoxDecoration(
-                color: AppColors.darkShade,
-                borderRadius: BorderRadius.circular(255),
-              ),
-              child: Center(
-                child: widget.isFavourite
-                    ? const Icon(
-                        Iconsax.heart5,
-                        color: Colors.amber,
-                      )
-                    : const Icon(
-                        Iconsax.heart,
-                        color: AppColors.whiteColor,
-                      ),
+            child: InkWell(
+              onTap: () {
+                setState(() {
+                  widget.isFavourite = !widget.isFavourite;
+                });
+              },
+              child: Container(
+                height: 50,
+                width: 50,
+                decoration: BoxDecoration(
+                  color: AppColors.darkShade,
+                  borderRadius: BorderRadius.circular(255),
+                ),
+                child: Center(
+                  child: widget.isFavourite
+                      ? const Icon(
+                          Iconsax.heart5,
+                          color: Colors.amber,
+                        )
+                      : const Icon(
+                          Iconsax.heart,
+                          color: AppColors.whiteColor,
+                        ),
+                ),
               ),
             ),
           ),
